@@ -1,0 +1,31 @@
+<!-- Title -->
+<h3 class="ui header">
+  <%= @title %>
+  <div class="sub header">
+    <small>
+      <i class="calendar icon"></i> <%= @formatedDate @start_date, 'LL' %>
+    </small>
+  </div>
+</h3>
+
+<!-- Description -->
+<p class="text-muted">
+  <%= @description %>
+</p>
+
+<!-- Members -->
+<div class="ui horizontal list">
+  <% for i in [0 .. 2]: %>
+  <div class="item">
+    <img class="ui avatar image" src="https://robohash.org/<%= @randomStr(5) %>.png?size=96x96">
+    <div class="content">
+      <div class="header">Tom</div>
+      Top Contributor
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<!-- Hangouts button -->
+<div class="ui divider"></div>
+<div id="<%= @id %>" class="action ui right floated green button" data-render="createhangout">Action</div>

@@ -1,0 +1,4 @@
+<div class="ui container">
+  <div id="header-region"></div>
+  <div id="events-region" class="ui centered grid"></div>
+</div>

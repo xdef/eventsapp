@@ -1,0 +1,10 @@
+<h1 class="ui dividing header">
+  Список встреч
+  <div class="sub header">
+    <div class="ui link horizontal list">
+      <a href="#!/event/new" class="item">
+        <i class="plus square outline icon"></i>Новая встреча
+      </a>
+    </div>
+  </div>
+</h1>
