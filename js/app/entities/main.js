@@ -1,0 +1,1 @@
+define(["app/app","./event/event"],function(e){return e.Entities});

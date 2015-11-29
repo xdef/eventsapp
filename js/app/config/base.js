@@ -1,0 +1,1 @@
+define([],function(){var e;return e={debug:!0,locale:"RU",GOOGLE_API_KEY:"AIzaSyAE3YYOa-ZEYZ624wF5SFtEjTcwEyIvmcs",GOOGLE_CLIENT_ID:"685612938874-6ts6u46vinnmgg5i8l0q4ffl8ain3g7f.apps.googleusercontent.com",GOOGLE_SCOPE:["email","profile"]}});

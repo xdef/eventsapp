@@ -1,7 +1,0 @@
-<div class="ui container">
-  <div id="header-region"></div>
-
-  <div class="ui centered grid">
-    <div id="content-region" class="seven wide column"></div>
-  </div>
-</div>
