@@ -359,7 +359,7 @@ gulp.task 'build', ['html', 'js', 'css', 'assets', 'rev:replace']
 
 
 ### Deploy ###
-gulp.task 'deploy', ['rsync']
+gulp.task 'deploy', ['gh-pages']
 
 
 ### Server ###
