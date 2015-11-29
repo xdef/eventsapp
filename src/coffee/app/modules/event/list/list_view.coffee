@@ -1,7 +1,6 @@
 define [
   'app/app'
   'base.views'
-  'google-platform'
   './templates/layout'
   './templates/header'
   './templates/item'
@@ -28,13 +27,16 @@ define [
       className: 'ui green clearing segment'
 
       ui:
-        hangoutBtn: '.action'
+        destroyBtn: '.destroy'
 
-      onRender: ->
-        gapi.hangout.render @ui.hangoutBtn[0],
-          'render': 'createhangout'
-          # 'hangout_type': 'onair'
-          'initial_apps': [{'app_id' : '1063424140675', 'app_type' : 'LOCAL_APP' }]
+      triggers:
+        'click @ui.destroyBtn': 'delete'
+
+      # onRender: ->
+      #   gapi.hangout.render @ui.hangoutBtn[0],
+      #     'render': 'createhangout'
+      #     # 'hangout_type': 'onair'
+      #     'initial_apps': [{'app_id' : '1063424140675', 'app_type' : 'LOCAL_APP' }]
 
     class List.Events extends Views.CollectionView
       className: 'ten wide column'

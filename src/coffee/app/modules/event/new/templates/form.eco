@@ -20,5 +20,5 @@
 </div>
 
 <div class="ui basic segment center aligned field">
-  <button type="submit" class="ui submit red button">Создать</button>
+  <button type="submit" class="ui submit basic red button">Создать</button>
 </div>

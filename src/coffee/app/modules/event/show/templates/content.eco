@@ -1,11 +1,10 @@
-<!-- Title -->
-<h3 class="ui header">
+<h3 class="ui dividing header">
   <%= @title %>
-  <div class="sub header">
+  <duv class="sub header">
     <small>
       <i class="calendar icon"></i> <%= @formatedDate @start_date, 'LL' %>
     </small>
-  </div>
+  </duv>
 </h3>
 
 <!-- Description -->
@@ -15,7 +14,7 @@
 
 <!-- Members -->
 <div class="ui horizontal list">
-  <% for i in [0 .. 2]: %>
+  <% for i in [0 ... 2]: %>
   <div class="item">
     <img class="ui avatar image" src="https://robohash.org/<%= @randomStr(5) %>.png?size=96x96">
     <div class="content">
@@ -28,7 +27,6 @@
 
 <!-- Hangouts button -->
 <div class="ui divider"></div>
-<div class="ui right aligned basic segment">
-  <a href="javascript:void(null);" class="destroy ui tiny red basic button">Удалить</a>
-  <a href="#!/event/<%= @id %>" class="ui tiny green basic button">Подробнее</a>
+<div class="ui center aligned basic segment">
+  <a href="javascript:void(null);" class="hangout ui tiny green basic button">hangout</a>
 </div>

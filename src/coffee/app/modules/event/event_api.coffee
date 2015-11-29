@@ -2,6 +2,7 @@ define [
   'app/app'
   './list/list_controller'
   './new/new_controller'
+  './show/show_controller'
 ], (App) ->
 
   API =
@@ -9,8 +10,9 @@ define [
       new App.Event.List.Controller
         region: App.mainRegion
 
-    show: (args...) ->
+    show: (id, params = "") ->
       new App.Event.Show.Controller
+        id: id
         region: App.mainRegion
 
     new: (args...) ->

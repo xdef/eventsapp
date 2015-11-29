@@ -25,6 +25,10 @@ define ["app/app", "base.controllers", "./list_view"], (App)->
         view = new List.Events
           collection: events
 
+        view.on 'event:delete', (args) ->
+          { model, collection, view } = args
+          App.commands.execute 'event:destroy', model
+
         @layout.showChildView 'events', view
 
   App.Event.List.Controller
