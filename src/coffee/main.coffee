@@ -99,16 +99,10 @@ requirejs.config
 
   modules: [
     {
-      name: 'app/modules/pages/pages_api'
-      exclude: ['app/app', 'app/vendors', 'base.entities', 'base.views', 'base.controllers']
-    }, {
       name: 'main'
       include: [
         'app/vendors', 'app/app', 'base.entities', 'base.views', 'base.controllers', 'base.config',
-        'entities'
-      ]
-      exclude: [
-        'app/modules/pages/pages_api'
+        'entities', 'event', 'app/modules/event/event_api'
       ]
     }
   ]
