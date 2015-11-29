@@ -2,5 +2,6 @@
 /prod
 /node_modules
 /.sass-cache
+/.publish
 /rev-manifest.json
 /settings.sublime-workspace
